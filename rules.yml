@@ -1,0 +1,132 @@
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle thank you
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Handle goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle who are you
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you
+
+- rule: Handle out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_default
+
+- rule: Show ESS options
+  steps:
+  - intent: ess_options
+  - action: utter_ess_options
+
+- rule: Show Manager options
+  steps:
+  - intent: manager_options
+  - action: utter_manager_options
+
+- rule: Show Payroll options
+  steps:
+  - intent: payroll_options
+  - action: utter_payroll_options
+
+- rule: Show Employee Management options
+  steps:
+  - intent: employee_mgmt_options
+  - action: utter_employee_mgmt_options
+
+- rule: Show Organization Setup options
+  steps:
+  - intent: org_setup_options
+  - action: utter_org_setup_options
+
+- rule: Show Company Settings options
+  steps:
+  - intent: company_settings_options
+  - action: utter_company_settings_options
+  
+- rule: Map emp_mgmt_update to response
+  steps:
+  - intent: emp_mgmt_update
+  - action: utter_emp_mgmt_update
+
+- rule: Map org_update_working_days to response
+  steps:
+  - intent: org_update_working_days
+  - action: utter_org_update_working_days
+
+- rule: Map org_update_attendance_location to response
+  steps:
+  - intent: org_update_attendance_location
+  - action: utter_org_update_attendance_location
+
+- rule: Map ess_mark_attendance to response
+  steps:
+  - intent: ess_mark_attendance
+  - action: utter_ess_mark_attendance
+
+- rule: Map payroll_run to response
+  steps:
+  - intent: payroll_run
+  - action: utter_payroll_run
+
+- rule: Map emp_mgmt_create to response
+  steps:
+  - intent: emp_mgmt_create
+  - action: utter_emp_mgmt_create
+
+- rule: Map org_update_department to response
+  steps:
+  - intent: org_update_department
+  - action: utter_org_update_department
+
+- rule: Map company_update_leave_types to response
+  steps:
+  - intent: company_update_leave_types
+  - action: utter_company_update_leave_types
+
+- rule: Map org_update_branch to response
+  steps:
+  - intent: org_update_branch
+  - action: utter_org_update_branch
+
+- rule: Map ess_request_attendance_correction to response
+  steps:
+  - intent: ess_request_attendance_correction
+  - action: utter_ess_request_attendance_correction
+
+- rule: Map ess_cancel_leave to response
+  steps:
+  - intent: ess_cancel_leave
+  - action: utter_ess_cancel_leave
+
+- rule: Map company_update_terms to response
+  steps:
+  - intent: company_update_terms
+  - action: utter_company_update_terms
+
+- rule: Map company_update_details to response
+  steps:
+  - intent: company_update_details
+  - action: utter_company_update_details
+
+- rule: Map ess_revoke_leave to response
+  steps:
+  - intent: ess_revoke_leave
+  - action: utter_ess_revoke_leave
+
+- rule: Map payroll_add_employee to response
+  steps:
+  - intent: payroll_add_employee
+  - action: utter_payroll_add_employee

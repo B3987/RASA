@@ -1,0 +1,198 @@
+version: "3.1"
+
+intents:
+  - greet
+  - thank
+  - goodbye
+  - who_are_you
+  - ess_options
+  - manager_options
+  - payroll_options
+  - employee_mgmt_options
+  - org_setup_options
+  - company_settings_options
+  - out_of_scope
+  
+  # ESS sub-intents
+  - ess_apply_leave
+  - ess_cancel_leave
+  - ess_revoke_leave
+  - ess_mark_attendance
+  - ess_request_attendance_correction
+  
+  # Manager sub-intents
+  - manager_approve_leave
+  
+  # Payroll sub-intents
+  - payroll_request
+  - payroll_run
+  - payroll_add_employee
+  
+  # Employee Management sub-intents
+  - emp_mgmt_create
+  - emp_mgmt_update
+  
+  # Org Setup sub-intents
+  - org_update_branch
+  - org_update_department
+  - org_update_working_days
+  - org_update_attendance_location
+  
+  # Company Settings sub-intents
+  - company_update_details
+  - company_update_leave_types
+  - company_update_terms
+
+responses:
+  utter_greet:
+  - text: "Hello I am your HR bot. Here are the options available:"
+    buttons:
+    - title: "EMPLOYEE SELF-SERVICE (ESS)"
+      payload: "/ess_options"
+    - title: "MANAGER PANEL"
+      payload: "/manager_options"
+    - title: "PAYROLL MANAGEMENT"
+      payload: "/payroll_options"
+    - title: "ADMIN PANEL - EMPLOYEE MANAGEMENT"
+      payload: "/employee_mgmt_options"
+    - title: "ADMIN PANEL - ORGANIZATION SETUP"
+      payload: "/org_setup_options"
+    - title: "ADMIN PANEL - COMPANY SETTINGS"
+      payload: "/company_settings_options"
+
+  utter_ess_options:
+  - text: "Here are the Employee Self-Service options:"
+    buttons:
+    - title: "How to apply for a leave"
+      payload: "/ess_apply_leave"
+    - title: "How to cancel a leave"
+      payload: "/ess_cancel_leave"
+    - title: "How to revoke a leave"
+      payload: "/ess_revoke_leave"
+    - title: "How to mark attendance"
+      payload: "/ess_mark_attendance"
+    - title: "How to request attendance correction"
+      payload: "/ess_request_attendance_correction"
+
+  utter_manager_options:
+  - text: "Here are the Manager Panel options:"
+    buttons:
+    - title: "Where to approve leave"
+      payload: "/manager_approve_leave"
+
+  utter_payroll_options:
+  - text: "Here are the Payroll Management options:"
+    buttons:
+    - title: "How to request for payroll"
+      payload: "/payroll_request"
+    - title: "How to run payroll"
+      payload: "/payroll_run"
+    - title: "How to add employee payroll"
+      payload: "/payroll_add_employee"
+
+  utter_employee_mgmt_options:
+  - text: "Here are the Employee Management options:"
+    buttons:
+    - title: "How to create employees"
+      payload: "/emp_mgmt_create"
+    - title: "How to update employee details"
+      payload: "/emp_mgmt_update"
+
+  utter_org_setup_options:
+  - text: "Here are the Organization Setup options:"
+    buttons:
+    - title: "How to update branch"
+      payload: "/org_update_branch"
+    - title: "How to update departments"
+      payload: "/org_update_department"
+    - title: "How to update working days"
+      payload: "/org_update_working_days"
+    - title: "How to update attendance location"
+      payload: "/org_update_attendance_location"
+
+  utter_company_settings_options:
+  - text: "Here are the Company Settings options:"
+    buttons:
+    - title: "Where to update company details"
+      payload: "/company_update_details"
+    - title: "How to update leave types"
+      payload: "/company_update_leave_types"
+    - title: "How to update terms and conditions"
+      payload: "/company_update_terms"
+
+  # ESS Responses
+  utter_ess_apply_leave:
+  - text: "Go to ESS -> My Leave -> Apply Leave -> Fill the details -> Submit."
+
+  utter_ess_cancel_leave:
+  - text: "Go to ESS -> My Leave -> Leave History -> Select Leave -> Click Cancel."
+
+  utter_ess_revoke_leave:
+  - text: "Go to ESS -> My Leave -> Leave History -> Select Leave -> Click Revoke (only applicable for approved leaves)."
+
+  utter_ess_mark_attendance:
+  - text: "Go to ESS -> Attendance -> Click 'Mark In' / 'Mark Out' based on your shift timing."
+
+  utter_ess_request_attendance_correction:
+  - text: "Go to ESS -> Attendance -> My Attendance -> Select Date -> Request Correction -> Submit Reason -> Save."
+
+  # Manager Responses
+  utter_manager_approve_leave:
+  - text: "Go to Manager Panel -> Team Leave Requests -> Review -> Approve/Reject."
+
+  # Payroll Responses
+  utter_payroll_request:
+  - text: "Go to Payroll Admin Panel -> Payroll -> Generate Payroll Request -> Select Month and Employees -> Submit."
+
+  utter_payroll_run:
+  - text: "Go to Admin Panel -> Payroll -> Run Payroll -> Review Deductions & Earnings -> Submit -> Generate Payslip."
+
+  utter_payroll_add_employee:
+  - text: "Go to Payroll -> Employee Payroll Setup -> Add Employee -> Enter Payroll Info -> Submit."
+
+  # Employee Management Responses
+  utter_emp_mgmt_create:
+  - text: "Go to Admin Panel -> Employees -> Add Employee -> Fill the details -> Submit."
+
+  utter_emp_mgmt_update:
+  - text: "Go to Admin Panel -> Employees -> Employee List -> Select Employee -> Edit -> Save."
+
+  # Organization Setup Responses
+  utter_org_update_branch:
+  - text: "Go to Admin Panel -> Organization -> Branches -> Select Branch -> Edit -> Save Changes."
+
+  utter_org_update_department:
+  - text: "Go to Admin Panel -> Organization -> Departments -> Select Department -> Edit -> Save."
+
+  utter_org_update_working_days:
+  - text: "Go to Admin Panel -> Attendance -> Working Days Setup -> Select Calendar -> Update -> Save."
+
+  utter_org_update_attendance_location:
+  - text: "Go to Admin Panel -> Attendance -> Geo Locations -> Edit Location -> Save Changes."
+
+  # Company Settings Responses
+  utter_company_update_details:
+  - text: "Go to Admin Panel -> Company Settings -> Company Info -> Update the fields -> Save Changes."
+
+  utter_company_update_leave_types:
+  - text: "Go to Admin Panel -> Leave Management -> Leave Types -> Edit Type -> Save."
+
+  utter_company_update_terms:
+  - text: "Go to Admin Panel -> Company Settings -> Terms and Conditions -> Edit -> Save."
+
+  # System Responses
+  utter_who_are_you:
+  - text: "I am a bot powered by Rasa."
+
+  utter_thank:
+  - text: "You're welcome, is there anything else I can help with?"
+
+  utter_default:
+  - text: "Sorry, I didn't understand that. Please select from the available options."
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
