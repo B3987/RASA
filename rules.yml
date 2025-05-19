@@ -130,3 +130,13 @@ rules:
   steps:
   - intent: payroll_add_employee
   - action: utter_payroll_add_employee
+
+- rule: Respond to affirm (ok)
+  steps:
+  - intent: affirm
+  - action: utter_thank
+
+- rule: Respond to deny (no)
+  steps:
+  - intent: deny
+  - action: utter_goodbye
