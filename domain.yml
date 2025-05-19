@@ -12,6 +12,8 @@ intents:
   - org_setup_options
   - company_settings_options
   - out_of_scope
+  - deny
+  - affirm
   
   # ESS sub-intents
   - ess_apply_leave
@@ -42,6 +44,8 @@ intents:
   - company_update_details
   - company_update_leave_types
   - company_update_terms
+
+  
 
 responses:
   utter_greet:
@@ -196,3 +200,9 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+
+  
+
+
+ 
