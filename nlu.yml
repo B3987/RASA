@@ -236,3 +236,25 @@ nlu:
     - what's your favorite color
     - how old are you
     - what time is it
+
+- intent: affirm
+  examples: |
+    - ok
+    - okay
+    - sure
+    - yes
+    - yep
+    - alright
+    - got it
+    - fine
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nothing else
+    - that's all
+    - no thanks
+    - I'm done
+    - not now
+    - that's it
