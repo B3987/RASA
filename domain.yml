@@ -122,73 +122,73 @@ responses:
 
   # ESS Responses
   utter_ess_apply_leave:
-  - text: "Go to ESS -> My Leave -> Apply Leave -> Fill the details -> Submit."
+  - text: "1. Go to ESS\n2. Select My Leave\n3. Click Apply Leave\n4. Fill the details\n5. Submit"
 
   utter_ess_cancel_leave:
-  - text: "Go to ESS -> My Leave -> Leave History -> Select Leave -> Click Cancel."
+  - text: "1. Go to ESS\n2. Select My Leave\n3. Choose Leave History\n4. Select Leave\n5. Click Cancel"
 
   utter_ess_revoke_leave:
-  - text: "Go to ESS -> My Leave -> Leave History -> Select Leave -> Click Revoke (only applicable for approved leaves)."
+  - text: "1. Go to ESS\n2. Select My Leave\n3. Choose Leave History\n4. Select Leave\n5. Click Revoke (only for approved leaves)"
 
   utter_ess_mark_attendance:
-  - text: "Go to ESS -> Attendance -> Click 'Mark In' / 'Mark Out' based on your shift timing."
+  - text: "1. Go to ESS\n2. Select Attendance\n3. Click 'Mark In' (start shift)\n4. Click 'Mark Out' (end shift)"
 
   utter_ess_request_attendance_correction:
-  - text: "Go to ESS -> Attendance -> My Attendance -> Select Date -> Request Correction -> Submit Reason -> Save."
+  - text: "1. Go to ESS\n2. Select Attendance\n3. Choose My Attendance\n4. Select Date\n5. Click Request Correction\n6. Enter Reason\n7. Save"
 
   # Manager Responses
   utter_manager_approve_leave:
-  - text: "Go to Manager Panel -> Team Leave Requests -> Review -> Approve/Reject."
+  - text: "1. Go to Manager Panel\n2. Select Team Leave Requests\n3. Review\n4. Approve/Reject"
 
   # Payroll Responses
   utter_payroll_request:
-  - text: "Go to Payroll Admin Panel -> Payroll -> Generate Payroll Request -> Select Month and Employees -> Submit."
+  - text: "1. Go to Payroll Admin Panel\n2. Select Payroll\n3. Click Generate Payroll Request\n4. Choose Month/Employees\n5. Submit"
 
   utter_payroll_run:
-  - text: "Go to Admin Panel -> Payroll -> Run Payroll -> Review Deductions & Earnings -> Submit -> Generate Payslip."
+  - text: "1. Go to Admin Panel\n2. Select Payroll\n3. Click Run Payroll\n4. Review Deductions/Earnings\n5. Submit\n6. Generate Payslip"
 
   utter_payroll_add_employee:
-  - text: "Go to Payroll -> Employee Payroll Setup -> Add Employee -> Enter Payroll Info -> Submit."
+  - text: "1. Go to Payroll\n2. Select Employee Payroll Setup\n3. Click Add Employee\n4. Enter Payroll Info\n5. Submit"
 
   # Employee Management Responses
   utter_emp_mgmt_create:
-  - text: "Go to Admin Panel -> Employees -> Add Employee -> Fill the details -> Submit."
+  - text: "1. Go to Admin Panel\n2. Select Employees\n3. Click Add Employee\n4. Fill details\n5. Submit"
 
   utter_emp_mgmt_update:
-  - text: "Go to Admin Panel -> Employees -> Employee List -> Select Employee -> Edit -> Save."
+  - text: "1. Go to Admin Panel\n2. Select Employees\n3. Choose Employee List\n4. Select Employee\n5. Click Edit\n6. Save"
 
   # Organization Setup Responses
   utter_org_update_branch:
-  - text: "Go to Admin Panel -> Organization -> Branches -> Select Branch -> Edit -> Save Changes."
+  - text: "1. Go to Admin Panel\n2. Select Organization\n3. Choose Branches\n4. Select Branch\n5. Click Edit\n6. Save Changes"
 
   utter_org_update_department:
-  - text: "Go to Admin Panel -> Organization -> Departments -> Select Department -> Edit -> Save."
+  - text: "1. Go to Admin Panel\n2. Select Organization\n3. Choose Departments\n4. Select Department\n5. Click Edit\n6. Save"
 
   utter_org_update_working_days:
-  - text: "Go to Admin Panel -> Attendance -> Working Days Setup -> Select Calendar -> Update -> Save."
+  - text: "1. Go to Admin Panel\n2. Select Attendance\n3. Choose Working Days Setup\n4. Select Calendar\n5. Update\n6. Save"
 
   utter_org_update_attendance_location:
-  - text: "Go to Admin Panel -> Attendance -> Geo Locations -> Edit Location -> Save Changes."
+  - text: "1. Go to Admin Panel\n2. Select Attendance\n3. Choose Geo Locations\n4. Edit Location\n5. Save Changes"
 
   # Company Settings Responses
   utter_company_update_details:
-  - text: "Go to Admin Panel -> Company Settings -> Company Info -> Update the fields -> Save Changes."
+  - text: "1. Go to Admin Panel\n2. Select Company Settings\n3. Choose Company Info\n4. Update Fields\n5. Save Changes"
 
   utter_company_update_leave_types:
-  - text: "Go to Admin Panel -> Leave Management -> Leave Types -> Edit Type -> Save."
+  - text: "1. Go to Admin Panel\n2. Select Leave Management\n3. Choose Leave Types\n4. Edit Type\n5. Save"
 
   utter_company_update_terms:
-  - text: "Go to Admin Panel -> Company Settings -> Terms and Conditions -> Edit -> Save."
+  - text: "1. Go to Admin Panel\n2. Select Company Settings\n3. Choose Terms and Conditions\n4. Edit\n5. Save"
 
   # System Responses
   utter_who_are_you:
   - text: "I am a bot powered by Rasa."
 
   utter_thank:
-  - text: "You're welcome, is there anything else I can help with?"
+  - text: "You're welcome! Is there anything else I can help with?"
 
   utter_default:
-  - text: "Sorry, I didn't understand that. Please select from the available options."
+  - text: "Sorry, I didn't understand. Please select from the options."
 
   utter_goodbye:
   - text: "Goodbye! Have a great day!"
