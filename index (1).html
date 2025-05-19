@@ -85,6 +85,7 @@
           .then((data) => {
             data.forEach((msg) => {
               if (msg.text) {
+                // Replace \n with <br> for line-by-line display
                 displayMessage("Bot: " + msg.text, "bot-message");
               }
               if (msg.buttons) {
@@ -99,7 +100,8 @@
 
       function displayMessage(message, className) {
         const messageElement = document.createElement("div");
-        messageElement.textContent = message;
+        // This line ensures \n are rendered as line breaks
+        messageElement.innerHTML = message.replace(/\n/g, "<br>");
         messageElement.className = className;
         chatContainer.appendChild(messageElement);
         chatContainer.scrollTop = chatContainer.scrollHeight;
